@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onload="generate()" id="body">
     <div class="container2">
+        <div class="container"><p><span id ="final">score:</span> <span id="score">0</span><br> time: 0:<span id="timer">45</span><br> <span id="progress">○○○○</span><span id="szorzo">1</span>x<span id="max"></span></p></div>
         <div  class="container">
             <p>Does the meaning match the text color?</p>
         </div>
@@ -16,15 +17,13 @@
             <div class="mean"><span id="meaning">asd</span></div>
             <div class="color"><span id="color">asd</span></div>
         </div>
-        <div class="container ">
+        <div class="container">
             <div class="speech top">meaning</div>
             <div class="speech top">text color</div>
         </div>
-
         <div class ="gombok">
-          <div class="no"><button><p>NO</p><img src="nyil.png" alt="nyil.png"></button></div>
-          <div class="yes"><button><img src="nyil.png" alt="nyil.png"><p>YES</p></button></div>
-
+          <div class="no"><button id="no" onkeydown="keyboard() "onclick="keyboard()"><p>NO</p><img src="nyil.png" alt="nyil.png"></button></div>
+          <div class="yes"><button id="yes" onkeydown="keyboard() "onclick="keyboard()"><img src="nyil.png" alt="nyil.png"><p>YES</p></button></div>
         </div>
     </div>
 </body>
